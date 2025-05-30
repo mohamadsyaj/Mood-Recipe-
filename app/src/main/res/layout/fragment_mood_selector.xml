@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MoodSelectorFragment">
+
+    <Button
+        android:id="@+id/happyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeling Happy"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/sadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeling Sad"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/angryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeling Angry"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/boredButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeling Bored" />
+</LinearLayout>

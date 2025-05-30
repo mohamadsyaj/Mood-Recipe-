@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moodSelectorFragment">
+
+    <fragment
+        android:id="@+id/moodSelectorFragment"
+        android:name="com.example.project_4.viewmodel.MoodSelectorFragment"
+        android:label="Select Mood" >
+        <action
+            android:id="@+id/action_moodSelectorFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.example.project_4.RecipeListFragment"
+        android:label="Recipes" >
+        <argument
+            android:name="selectedMood"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

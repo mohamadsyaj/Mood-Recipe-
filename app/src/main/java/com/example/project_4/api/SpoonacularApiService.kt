@@ -11,12 +11,12 @@ interface SpoonacularApiService {
         @Query("query") query: String,
         @Query("number") number: Int = 10,
         @Query("addRecipeInformation") addInfo: Boolean = false,
-        @Query("apiKey") apiKey: String = "448c28b1ccdb4e799596165d190fb132"
+        @Query("apiKey") apiKey: String = ""
     ): RecipeResponse
 
     @GET("recipes/informationBulk")
     suspend fun getBulkRecipeInfo(
         @Query("ids") ids: String,
-        @Query("apiKey") apiKey: String = "448c28b1ccdb4e799596165d190fb132"
+        @Query("apiKey") apiKey: String = ""
     ): List<Recipe>
 }
